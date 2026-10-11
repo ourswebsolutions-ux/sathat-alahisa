@@ -1,6 +1,6 @@
 import Image from "next/image";
 import type { CSSProperties } from "react";
-import heroImage from "@/assets/photos/hero-flatbed.jpg";
+import heroImage from "@/assets/photos/hero-own-flatbed.jpg";
 import { CallButton, WhatsAppButton } from "@/components/ui/buttons";
 import type { Dictionary } from "@/i18n/dictionaries/ar";
 
@@ -22,9 +22,10 @@ export function Hero({
       aria-labelledby="hero-title"
       className="grain relative isolate flex min-h-[100svh] flex-col overflow-hidden bg-ink"
     >
-      {/* Photography. In LTR the frame shifts to the end side so the truck stays clear of the copy. */}
+      {/* Photography. On laptop/desktop the frame covers only the image side (opposite the copy), so the
+          portrait photo shows the whole truck and car instead of being zoomed to the full width. */}
       {/* Scroll parallax via CSS scroll-driven animation where supported (see .hero-parallax). */}
-      <div className="hero-parallax absolute inset-0 -z-20 ltr:lg:start-[28%]" style={{ transform: "scale(1.06)" }}>
+      <div className="hero-parallax absolute inset-0 -z-20 lg:start-[44%]" style={{ transform: "scale(1.06)" }}>
         <Image
           src={heroImage}
           alt={dict.imageAlt}
@@ -32,9 +33,9 @@ export function Hero({
           preload
           placeholder="blur"
           sizes="115vw"
-          className="object-cover object-[24%_center] lg:object-[30%_center] ltr:lg:object-[18%_center]"
+          className="object-cover object-[24%_center] lg:object-[center_60%]"
         />
-        <div className="absolute inset-y-0 start-0 hidden w-1/3 bg-linear-to-r from-ink to-transparent ltr:lg:block" />
+        <div className="absolute inset-y-0 start-0 hidden w-1/3 bg-linear-to-r from-ink to-transparent lg:block rtl:bg-linear-to-l" />
       </div>
 
       {/* Cinematic overlays: text side (start) is darkest, image side breathes */}
@@ -53,12 +54,12 @@ export function Hero({
           </p>
 
           <h1 id="hero-title" className="font-display">
-            <span style={delay(0.2)} className="animate-rise mb-4 block text-lg font-medium text-white/80 sm:text-xl">
+            <span style={delay(0.2)} className="animate-rise mb-5 block text-lg font-medium text-white/80 sm:mb-4 sm:text-xl">
               {dict.eyebrow}
             </span>
             <span
               style={delay(0.3)}
-              className="animate-rise block text-[2.6rem] font-bold leading-[1.2] sm:text-6xl lg:text-[4.25rem] lg:leading-[1.15] ltr:text-[2.4rem] ltr:leading-[1.1] ltr:tracking-tight ltr:sm:text-6xl ltr:lg:text-[3.6rem] ltr:lg:leading-[1.08]"
+              className="animate-rise block text-[2.6rem] font-bold leading-[1.5] sm:text-6xl sm:leading-[1.2] lg:text-[4.25rem] lg:leading-[1.15] ltr:text-[2.4rem] ltr:leading-[1.1] ltr:tracking-tight ltr:sm:text-6xl ltr:lg:text-[3.6rem] ltr:lg:leading-[1.08]"
             >
               <span className="text-white">{dict.title[0]}</span>{" "}
               <span className="text-brand-red sm:block">{dict.title[1]}</span>
