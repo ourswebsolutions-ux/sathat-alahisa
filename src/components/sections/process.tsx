@@ -18,7 +18,7 @@ export function Process({
     <section aria-labelledby="process-title" className="bg-paper py-24 sm:py-32">
       <div className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-10">
         <Reveal className="max-w-3xl">
-          <SectionEyebrow index="03">{dict.eyebrow}</SectionEyebrow>
+          <SectionEyebrow>{dict.eyebrow}</SectionEyebrow>
           <h2 id="process-title" className="mt-6 text-balance font-display text-4xl font-bold leading-[1.25] text-brand-blue sm:text-5xl">
             {dict.title}
           </h2>

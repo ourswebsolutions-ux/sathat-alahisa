@@ -2,10 +2,10 @@ import { notFound } from "next/navigation";
 import { FloatingWhatsApp } from "@/components/floating-whatsapp";
 import { Footer } from "@/components/footer";
 import { Header } from "@/components/header";
+import { Banner } from "@/components/sections/banner";
 import { Faq } from "@/components/sections/faq";
 import { RequestForm } from "@/components/sections/contact";
 import { FinalCta } from "@/components/sections/final-cta";
-import { Gallery } from "@/components/sections/gallery";
 import { Hero } from "@/components/sections/hero";
 import { Highlights } from "@/components/sections/highlights";
 import { Process } from "@/components/sections/process";
@@ -28,8 +28,8 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <Highlights dict={dict.highlights} />
         <Services dict={dict.services} common={dict.common} serviceMessage={dict.messages.service} />
         <WhyUs dict={dict.why} />
+        <Banner dict={dict.banner} common={dict.common} message={dict.messages.general} />
         <Process dict={dict.process} common={dict.common} message={dict.messages.request} />
-        <Gallery dict={dict.gallery} />
         <ServiceArea dict={dict.area} common={dict.common} message={dict.messages.area} />
         <Faq dict={dict.faq} />
         <RequestForm

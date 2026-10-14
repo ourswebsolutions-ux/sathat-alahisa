@@ -8,9 +8,12 @@ export const BUSINESS_NAME = "سطحه الاحساءه\u200Dيدرولك اله
 // is NOT shown on the site; the site names only the confirmed service area (Al-Ahsa / Al-Hofuf).
 export const CLIENT_LOCATION_RAW = "الاحساء اله\u200Dفوف المبرسلوى الدارم الرارض جبل مخاسن بفق";
 
-export const PHONE_E164 = "+966541264317";
-export const PHONE_DISPLAY = "+966 54 126 4317";
-export const WHATSAPP_NUMBER = "966541264317";
+// Compact brand shown in the navbar (the full official name above is used everywhere else).
+export const BRAND_SHORT = "سطحة الهفوف";
+
+export const PHONE_E164 = "+966593798655";
+export const PHONE_DISPLAY = "+966 59 379 8655";
+export const WHATSAPP_NUMBER = "966593798655";
 
 export const TEL_HREF = `tel:${PHONE_E164}`;
 

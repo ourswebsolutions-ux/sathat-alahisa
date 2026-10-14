@@ -62,10 +62,10 @@ export const en: Dictionary = {
   },
   hero: {
     eyebrow: "Hydraulic flatbed towing in Al-Ahsa & Al-Hofuf",
-    title: ["The flatbed you need,", "when you need it"],
+    title: ["Reliable Recovery.", "Right When It Matters."],
     subtitle: "Moving your car starts with one call",
-    body: "Towing and transport for broken-down and damaged cars across Al-Ahsa and Al-Hofuf — 24 hours a day, 7 days a week. Message us on WhatsApp with your location and your car's details.",
-    imageAlt: "A modern flatbed tow truck with a warning light bar on its roof",
+    body: "Professional vehicle recovery and transport across Al-Ahsa and Al-Hofuf, with a focus on safe handling and dependable service.",
+    imageAlt: "A red flatbed carrying a sedan on a highway toward Al-Ahsa and Al-Hofuf",
     specs: [
       { label: "Coverage", value: "Within Al-Ahsa and Al-Hofuf" },
       { label: "Further afield", value: "Other cities by arrangement" },
@@ -92,7 +92,7 @@ export const en: Dictionary = {
       {
         title: "Broken-down car towing",
         text: "Car broken down on the road or outside your home? Send us your location and the problem, and we'll arrange towing to the workshop or any destination you choose.",
-        alt: "A car stopped at the roadside at dusk with its doors open",
+        alt: "A sedan secured on a red flatbed during transport on the road",
       },
       {
         title: "Flatbed car transport",
@@ -107,7 +107,7 @@ export const en: Dictionary = {
       {
         title: "Transport between locations & cities",
         text: "Moving your car between neighbourhoods in Al-Ahsa and Al-Hofuf, or to other cities and regions once the destination and details are agreed.",
-        alt: "A highway through the mountains in Saudi Arabia",
+        alt: "A flatbed carrying an SUV on a highway toward Al-Ahsa, Al-Hofuf and other cities",
       },
     ],
   },
@@ -134,16 +134,11 @@ export const en: Dictionary = {
     note: "We'll prepare a message with the fields we need: car type, problem, location and destination. Just fill them in and send.",
     cta: "Take the first step",
   },
-  gallery: {
-    eyebrow: "On the road",
-    title: "The details that matter, every trip",
-    note: "Photos from our own jobs, plus one illustrative image.",
-    items: [
-      { caption: "Our work: a city transport", alt: "Our red flatbed carrying a grey sedan on a city street" },
-      { caption: "Our work: secured on the deck", alt: "A white luxury sedan secured on our red flatbed deck" },
-      { caption: "Illustrative: the loading deck", alt: "A silver car's wheel on the perforated metal deck of a flatbed in a workshop" },
-      { caption: "Our work: a car on the flatbed", alt: "A grey Hyundai loaded on our flatbed" },
-    ],
+  banner: {
+    title: ["When Every Mile Matters,", "Count on Us."],
+    body: "From unexpected breakdowns to planned vehicle transport, we're here to help you move forward with confidence.",
+    cta: "Contact Us Now",
+    imageAlt: "A red flatbed carrying a damaged car on a highway toward Al-Ahsa and Al-Hofuf",
   },
   area: {
     eyebrow: "Service area",
@@ -254,11 +249,7 @@ export const en: Dictionary = {
     intro:
       "Some photos on this site are from our own jobs; others are illustrative images of flatbed and transport services and do not show our vehicles. The illustrative images have been cropped and color-graded and are used under the licenses listed below.",
     uses: {
-      hero: "Hero section",
-      breakdown: "Broken-down car towing",
       accident: "Accident vehicle transport",
-      intercity: "Transport between locations & cities",
-      gallery: "Gallery",
       area: "Service area section",
       contact: "Contact section",
     },

@@ -29,7 +29,7 @@ export function ServiceArea({
 
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-12 lg:px-10">
         <Reveal className="lg:col-span-6">
-          <SectionEyebrow index="05" tone="brand">{dict.eyebrow}</SectionEyebrow>
+          <SectionEyebrow tone="brand">{dict.eyebrow}</SectionEyebrow>
           <h2 id="area-title" className="mt-6 text-balance font-display text-4xl font-bold leading-[1.25] text-white sm:text-5xl">
             {dict.title}
           </h2>

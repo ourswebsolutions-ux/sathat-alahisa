@@ -27,15 +27,11 @@ const LICENSES = {
   "by-sa-4.0": { name: "CC BY-SA 4.0", url: "https://creativecommons.org/licenses/by-sa/4.0/" },
 } as const;
 
-type Use = "hero" | "breakdown" | "accident" | "intercity" | "gallery" | "area" | "contact";
+type Use = "accident" | "area" | "contact";
 
 // Illustrative third-party images only; the business's own photos need no attribution.
 const credits: { use: Use; title: string; author: string; source: string; license: keyof typeof LICENSES }[] = [
-  { use: "hero", title: "Modern Ford Tow Truck", author: "Kragar888", source: "https://commons.wikimedia.org/w/index.php?curid=159205186", license: "by-sa-4.0" },
-  { use: "breakdown", title: "Car in the middle of the wilderness in the middle of the night in Tulppio", author: "JIP", source: "https://commons.wikimedia.org/w/index.php?curid=42184726", license: "by-sa-3.0" },
   { use: "accident", title: "Bergingstruck met auto (tow truck with car)", author: "Wikimedia Commons contributor", source: "https://commons.wikimedia.org/w/index.php?curid=747302", license: "by-sa-3.0" },
-  { use: "intercity", title: "Highway60SaudiArabia", author: "King Eliot", source: "https://commons.wikimedia.org/w/index.php?curid=23371181", license: "by-sa-3.0" },
-  { use: "gallery", title: "Car being loaded onto a towing truck in a garage", author: "Shixart1985", source: "https://commons.wikimedia.org/w/index.php?curid=186889526", license: "by-2.0" },
   { use: "area", title: "Sunset in Dammam 04", author: "കാക്കര", source: "https://commons.wikimedia.org/w/index.php?curid=25007369", license: "by-sa-3.0" },
   { use: "contact", title: "Night hour still on the road", author: "ThusoMotlasuping", source: "https://commons.wikimedia.org/w/index.php?curid=89155390", license: "by-sa-4.0" },
 ];

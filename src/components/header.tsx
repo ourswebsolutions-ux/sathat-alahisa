@@ -6,7 +6,7 @@ import { BrandMark, WhatsAppIcon } from "@/components/icons";
 import { LanguageDropdown, LanguageSwitcher } from "@/components/language-switcher";
 import { type Locale, localePath } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/ar";
-import { BUSINESS_NAME, PHONE_DISPLAY, TEL_HREF, whatsappHref } from "@/lib/site";
+import { BRAND_SHORT, BUSINESS_NAME, PHONE_DISPLAY, TEL_HREF, whatsappHref } from "@/lib/site";
 
 export function Header({
   lang,
@@ -122,7 +122,7 @@ export function Header({
           >
             <BrandMark className={`size-7 shrink-0 transition-colors duration-500 min-[360px]:size-8 sm:size-9 ${light ? "text-brand-blue" : "text-white"}`} />
             <span className="flex min-w-0 flex-col leading-tight">
-              <span lang="ar" className="line-clamp-2 text-balance font-display text-[12px] font-bold leading-snug min-[360px]:text-[13px] sm:truncate sm:text-base sm:leading-tight">{BUSINESS_NAME}</span>
+              <span lang="ar" className="line-clamp-2 text-balance font-display text-[12px] font-bold leading-snug min-[360px]:text-[13px] sm:truncate sm:text-base sm:leading-tight">{BRAND_SHORT}</span>
               <span className={`hidden text-[11px] tracking-wide sm:block ${light ? "text-brand-blue" : "text-white/70"}`}>{common.tagline}</span>
             </span>
           </a>
@@ -175,7 +175,7 @@ export function Header({
       >
         <nav aria-label={nav.mobile}>
           <ul className="flex flex-col">
-            {nav.links.map((link, i) => (
+            {nav.links.map((link) => (
               <li key={link.href} className="border-b border-line">
                 <a
                   href={navHref(link.href)}
@@ -183,9 +183,6 @@ export function Header({
                   className="flex items-center justify-between py-5 font-display text-2xl font-semibold text-brand-blue"
                 >
                   {link.label}
-                  <span dir="ltr" className="text-xs tabular-nums text-brand-red">
-                    0{i + 1}
-                  </span>
                 </a>
               </li>
             ))}

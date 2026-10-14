@@ -21,7 +21,7 @@ export function RequestForm({
     <section id="request" aria-labelledby="request-title" className="border-t border-line bg-mist py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-10">
         <Reveal className="lg:col-span-4">
-          <SectionEyebrow index="07">{final.eyebrow}</SectionEyebrow>
+          <SectionEyebrow>{final.eyebrow}</SectionEyebrow>
           <h2 id="request-title" className="mt-6 text-balance font-display text-4xl font-bold leading-[1.25] text-brand-blue sm:text-5xl">
             {form.heading}
           </h2>

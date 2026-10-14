@@ -34,7 +34,7 @@ the email server accepted the message.
 
 ## Configuration
 
-- Business name, phone (+966 54 126 4317) and WhatsApp number live in `src/lib/site.ts`; prefilled WhatsApp messages are in the dictionaries.
+- Business name, phone (+966 59 379 8655) and WhatsApp number live in `src/lib/site.ts`; prefilled WhatsApp messages are in the dictionaries.
 - Set `NEXT_PUBLIC_SITE_URL` (e.g. `https://example.sa`) in production so canonical, Open Graph
   and structured-data URLs are absolute. On Vercel the production domain is detected automatically.
 

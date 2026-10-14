@@ -13,7 +13,7 @@ export function Faq({ dict }: { dict: Dictionary["faq"] }) {
     <section aria-labelledby="faq-title" className="border-t border-line bg-paper py-24 sm:py-32">
       <div className="mx-auto grid max-w-7xl gap-14 px-4 sm:px-6 lg:grid-cols-12 lg:gap-10 lg:px-10">
         <Reveal className="lg:col-span-4">
-          <SectionEyebrow index="06">{dict.eyebrow}</SectionEyebrow>
+          <SectionEyebrow>{dict.eyebrow}</SectionEyebrow>
           <h2 id="faq-title" className="mt-6 text-balance font-display text-4xl font-bold leading-[1.25] text-brand-blue sm:text-5xl">
             {dict.title}
           </h2>
