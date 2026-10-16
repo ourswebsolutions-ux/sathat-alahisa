@@ -17,6 +17,9 @@ export const WHATSAPP_NUMBER = "966593798655";
 
 export const TEL_HREF = `tel:${PHONE_E164}`;
 
+export const BUSINESS_EMAIL = "sathalahisa@gmail.com";
+export const MAILTO_HREF = `mailto:${BUSINESS_EMAIL}`;
+
 export const SITE_URL =
   process.env.NEXT_PUBLIC_SITE_URL ??
   (process.env.VERCEL_PROJECT_PRODUCTION_URL

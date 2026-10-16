@@ -32,7 +32,14 @@ export default async function Home({ params }: PageProps<"/[lang]">) {
         <Process dict={dict.process} common={dict.common} message={dict.messages.request} />
         <ServiceArea dict={dict.area} common={dict.common} message={dict.messages.area} />
         <Faq dict={dict.faq} />
-        <RequestForm final={dict.final} form={dict.form} common={dict.common} message={dict.messages.request} />
+        <RequestForm
+          lang={lang}
+          final={dict.final}
+          form={dict.form}
+          services={dict.services.items.map((s) => s.title)}
+          common={dict.common}
+          message={dict.messages.request}
+        />
         <FinalCta dict={dict.final} common={dict.common} message={dict.messages.final} />
       </main>
       <Footer lang={lang} dict={dict.footer} common={dict.common} nav={dict.nav} message={dict.messages.general} />

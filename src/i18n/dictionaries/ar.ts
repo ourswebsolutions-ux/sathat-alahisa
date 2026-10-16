@@ -22,6 +22,7 @@ export const ar = {
     whatsapp: "واتساب",
     whatsappCta: "تواصل عبر واتساب",
     whatsappTooltip: "تواصل معنا عبر واتساب",
+    emailLabel: "البريد الإلكتروني",
     callNow: "اتصل بنا الآن",
     call: "اتصل بنا",
     newTab: "(يفتح واتساب في نافذة جديدة)",

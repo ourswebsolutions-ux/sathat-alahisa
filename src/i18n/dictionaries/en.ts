@@ -24,6 +24,7 @@ export const en: Dictionary = {
     whatsapp: "WhatsApp",
     whatsappCta: "Message us on WhatsApp",
     whatsappTooltip: "Contact us on WhatsApp",
+    emailLabel: "Email",
     callNow: "Call us now",
     call: "Call us",
     newTab: "(opens WhatsApp in a new tab)",

@@ -1,9 +1,9 @@
-import { Phone } from "lucide-react";
+import { Mail, Phone } from "lucide-react";
 import { CurrentYear } from "@/components/current-year";
 import { BrandMark, WhatsAppIcon } from "@/components/icons";
 import { type Locale, localePath } from "@/i18n/config";
 import type { Dictionary } from "@/i18n/dictionaries/ar";
-import { BUSINESS_NAME, PHONE_DISPLAY, TEL_HREF, whatsappHref } from "@/lib/site";
+import { BUSINESS_EMAIL, BUSINESS_NAME, MAILTO_HREF, PHONE_DISPLAY, TEL_HREF, whatsappHref } from "@/lib/site";
 
 export function Footer({
   lang,
@@ -53,6 +53,13 @@ export function Footer({
               <a href={TEL_HREF} className="inline-flex items-center gap-3 text-[15px] text-white/80 transition-colors hover:text-white">
                 <Phone className="size-4 text-brand-red" strokeWidth={1.6} aria-hidden="true" />
                 <span dir="ltr" className="tabular-nums">{PHONE_DISPLAY}</span>
+              </a>
+            </li>
+            <li>
+              <a href={MAILTO_HREF} className="inline-flex items-center gap-3 text-[15px] text-white/80 transition-colors hover:text-white">
+                <Mail className="size-4 text-brand-red" strokeWidth={1.6} aria-hidden="true" />
+                <span className="sr-only">{common.emailLabel}: </span>
+                <span dir="ltr">{BUSINESS_EMAIL}</span>
               </a>
             </li>
             <li>
